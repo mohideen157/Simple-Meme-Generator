@@ -5,13 +5,13 @@ import MemeGenerator from '../MemeGenerator/MemeGenerator';
 
 const Headers = () => {
     return (
-        <>
-                <h1>Sample meme Generator</h1>
+        <center>
+                <h1><b>Sample meme Generator</b></h1>
             
             <MemeGenerator />
        
                 
-            </>
+            </center>
          );
 };
 

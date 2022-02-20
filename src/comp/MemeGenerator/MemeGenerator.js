@@ -32,6 +32,7 @@ const MemeGenerator = () =>{
           .then(response => setAllMemeImgs(response.data.memes));
     },[]);
     return (
+        <center>
         <div className="meme-container">
             <form onSubmit={handleSubmit}>
                 <input
@@ -49,13 +50,16 @@ const MemeGenerator = () =>{
                     onChange={handleChange}
                 />
                 <button>Generate</button>
-            </form>
+               </form>
+               <br/>
+               <br/>
             <div className="meme">
                 <img src={randomImage} alt="" />
                 <h2 className="top">{inputText.topText}</h2>
                 <h2 className="bottom">{inputText.bottomText}</h2>
             </div>
         </div>
+        </center>
     );
 };
 
